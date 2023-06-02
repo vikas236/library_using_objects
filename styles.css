@@ -1,0 +1,197 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #E1DCC5;
+}
+
+body, navbar.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* styling hero navbar */
+
+navbar.hero {
+    background: #333333;
+    width: 100%;
+    height: 50px;
+}
+
+/* hero navbar title */
+navbar.hero .title {
+    font-size: 24px;
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+}
+
+navbar.hero .title:hover {
+    color:rgba(255, 255, 255, .8);
+}
+
+/* donate button wiht a heart */
+navbar.hero .donate {
+    margin: 0 10px;
+    width: 100px;
+    height: 25px;
+    background: #333333;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+navbar.hero .donate:hover {
+    color:rgba(255, 255, 255, .7);
+}
+
+/* navbar container with a width to center it */
+navbar .container {
+    width: 55vw;
+}
+
+/* hero navbar images */
+navbar.hero img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* hero navbar svg icons */
+svg {
+    width: 25px;
+    height: 25px;
+}
+
+svg path {
+    fill: white;
+    cursor: pointer;
+}
+
+/* styling containers in both navbars hero and primary */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .right, .container .left {
+    display: flex;
+    align-items: center;
+}
+
+
+/* styling primary navbar */
+navbar.primary {
+    padding-top: 25px;
+}
+
+/* primary navbar container */
+navbar.primary .container {
+    width: 54vw;
+}
+
+/* primary navbar svg styling */
+navbar.primary .container svg path {
+    fill: rgba(0, 0, 0, .5);
+}
+
+/* primary navbar search input */
+navbar.primary input {
+    width: 600px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+input {
+    border-radius: 10px;
+    border:1px solid rgba(255, 255, 255, .7);
+    padding: 10px;
+}
+
+input:focus {
+    border: 1px solid white;
+    outline: 1px solid white;;
+}
+
+/* primary navbar login link */
+navbar.primary a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .5);
+    font-size: 18px;
+}
+
+navbar.primary a:hover {
+    color: rgba(255, 255, 255, .7);
+}
+
+/* signup button in primary navbar */
+navbar.primary button {
+    width: 100px;
+    height: 30px;
+    margin: 0 15px;
+    background: #0376B8;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+navbar.primary button:hover {
+    color: black;
+}
+
+
+/* main styling */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 54vw;
+    height: 1000px;
+    background: white;
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* main h1 heading in main */
+main h1 {
+    color: #02598B;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* add book button */
+main .add_book {
+    width: 150px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, .5);
+    font-size: 18px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+main .add_book:hover {
+    background: #0376B8;
+    color: white;
+}
+
+main svg {
+    position: relative;
+    top: -30px;
+    left: 120px;
+}
+
+main svg path {
+    fill: rgba(0, 0, 0, .5);
+}

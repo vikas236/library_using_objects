@@ -231,6 +231,7 @@ main svg path {
 /* add book details box */
 .add {
     position: absolute;
+    inset: 25vh 50px;
     width: 350px;
     height: 350px;
     background: #333333;
@@ -282,7 +283,7 @@ main svg path {
     outline: none;
 }
 
-.add .box #book_name:invalid {
+.add .box #book_name.invalid {
     outline: 1px solid red;
 }
 

@@ -25,21 +25,13 @@ function book_color() {
 // click add book to show add book details
 function start_add() {
     add_book.addEventListener("click", function () {
-        add.classList.add("active");
-        dim.classList.add("active");
-    });
-};
-
-// click anywehre to close add book details
-function close_add() {
-    dim.addEventListener("click", function () {
-        add.classList.remove("active");
-        dim.classList.remove("active");
+        add.classList.toggle("active");
+        // dim.classList.add("active");
     });
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
             add.classList.remove("active");
-            dim.classList.remove("active");
+            // dim.classList.remove("active");
         }
     });
 };
@@ -90,6 +82,15 @@ function shelfBooks() {
     };
 };
 
+// Check book title validity only after user interaction
+function validName() {
+    console.log("working");
+    book_name.addEventListener("blur", function() {
+        if (book_name.checkValidity() == false) { this.classList.add("invalid"); }
+        else { this.classList.remove("invalid"); };
+    });
+};
+
 // Empty Book details box
 function clearBox() {
     book_name.value = "";
@@ -102,6 +103,6 @@ function clearBox() {
 
 book_color();
 start_add();
-close_add();
 addBookToLibrary();
 shelfBooks();
+validName();
